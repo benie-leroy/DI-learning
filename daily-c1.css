@@ -1,0 +1,13 @@
+h1{
+	background-color: gray;
+	color: blue;
+	font-size: 40px;
+	font-style: oblique;
+}
+#menu:hover{
+background-color: gray;
+}
+#paragraph {
+	color: blue;
+	
+}

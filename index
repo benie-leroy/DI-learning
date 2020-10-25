@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> My first html page </title>
+</head>
+<body>
+<h1> this is my first page html </h1>
+<p> i need your help to become a great web developper </p>
+<h2> this is my segond heading </h2>
+<h3> this is my third heading </h3>
+<a href="https://www.google.com/"> this is the google page </a>
+</body>
+</html>

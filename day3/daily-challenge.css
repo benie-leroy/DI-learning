@@ -1,0 +1,61 @@
+body{
+	height: 100%;
+}
+
+.un{
+	grid-area: un;
+	background-color: yellow;
+}
+.deux{
+	grid-area: deux;
+	background-color: yellow;
+}
+.trois{
+	grid-area: trois;
+	background-color: yellow;
+}
+.quatre{
+	grid-area: quatre;
+	background-color: yellow;
+}
+.cinq{
+	grid-area: cinq;
+	background-color: green;
+}
+.six{
+	grid-area: six;
+	background-color: green;
+}
+.sept{
+	grid-area: sept;
+	background-color: yellow;
+}
+.huit{
+	grid-area: huit;
+	background-color: yellow;
+}
+.neuf{
+	grid-area: neuf;
+	background-color: yellow;
+}
+.dix{
+	grid-area: dix;
+	background-color: yellow;
+}
+.onze{
+	grid-area: onze;
+	background-color: yellow;
+}
+
+
+.container{
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-areas: 
+	"un un onze cinq cinq"
+	"deux deux six six six"
+	"trois trois trois sept sept"
+	"quatre quatre quatre huit huit"
+
+}

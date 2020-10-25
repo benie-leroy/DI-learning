@@ -1,0 +1,25 @@
+h2{
+	background-color: pink;
+	font-style: oblique;
+	font-size: 20px;
+	text-align: center;
+}
+.nav{
+	padding-left: 500px;
+	background-color: gray;
+
+
+}
+#logo{
+	list-style: none;
+	display: inline-flex;
+	margin-left: 450px;
+}
+#logo li{
+	margin-left: 50px;
+	position: center;
+}
+img{
+	border-radius: 100px;
+}
+

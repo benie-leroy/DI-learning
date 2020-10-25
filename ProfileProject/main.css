@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+html,h1,h2,h3,h4,h5,h6,a{
+    font-family: "Raleway";}
+header{
+	height: 30rem;
+}
+.overlay{
+	background-image: url(images/headerback.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+	opacity: 0.3;
+}
+.text{
+	font-weight: bold;
+	z-index: 2;
+	top: 30%;
+	left: 30%;
+	text-align: center;
+	padding: 30px;
+	position: absolute;
+
+}
+.about{
+	text-align: center;
+	color: orange;
+	padding: 100px;
+}
+.portfolio{
+	text-align: center;
+	color: orange;
+	padding: 100px;
+}
+.blog{
+	text-align: center;
+	color: orange;
+	padding: 100px;
+}
+.team{
+	text-align: center;
+	color: orange;
+	padding: 100px;	
+}
