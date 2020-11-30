@@ -1,0 +1,18 @@
+form{
+	color:powderblue;
+}
+h3{color:green;}
+#title{
+	color:red;
+}
+.other{
+	color:violet;
+}table, th,td{
+	border: 2px black solid;
+	border-collapse: collapse;
+}
+#joie{
+	background-color: powderblue;
+	float: left;
+	text-align: center;
+}

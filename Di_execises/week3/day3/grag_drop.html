@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+
+	<p id="benie" draggable = 'true' ondragstart="drag(event)">A deplacer</p>
+	<div style="border: 2px solid blue; width: 100px; height: 100px;" ondrop="drop(event);" ondragover='dragover(event);' ondragenter="dragenter(event);" ondragleave="dragleave(event);"></div>
+
+	<h1 draggable='true' ondragstart="dragstart(event)" ondragend="dragend(event)">Move with coordinates</h1>
+
+<script type="text/javascript">
+	let h1 = document.querySelector('h1');
+	console.log(h1.style.top);
+function dragstart(event){
+	console.log(event.clientX+ ' '+event.clientY);
+}
+function dragend(event){
+	let abscisses = event.clientX;
+	let ordonees = event.clientY;
+	h1.style.top = ordonees + 'px';
+	h1.style.left = abscisses + 'px';
+	h1.style.position = 'absolute';
+
+}
+
+		let text = document.getElementById('benie');
+		function drag(event){
+			event.dataTransfer.setData('text',event.target.id);
+			console.log(event.target);
+		}
+		function dragover(event){
+			event.preventDefault();
+		}
+		function drop(event){
+			event.preventDefault();
+			event.dataTransfer.getData('text');
+			event.target.appendChild(text);
+		}
+	</script>
+
+
+
+</body>
+</html>

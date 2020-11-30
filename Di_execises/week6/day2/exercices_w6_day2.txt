@@ -1,0 +1,27 @@
+-create table items2(item_id serial primary key, name varchar(30) not null, 
+--price int not null)
+--insert into items2(name, price)
+--values('Small desk', 100), ('Large desk', 300), ('Fan', 80)
+--create table customers2(customers_id serial primary key, first_name varchar(50) not null, last_name varchar(50) not null)
+--insert into customers2(first_name, last_name)
+--values('Greg', 'Jones'), ('Sandra', 'Jones'), ('Scott', 'Scott'), ('Trevor', 'Green'), ('Melanie', 'Johnson')
+--select * from items2
+--select * from customers2
+
+-- exercice 1.1 
+--question 1:
+
+--select * from items2 order by price asc
+
+--question 2
+--select * from items2 where price >=80 order by price desc
+
+--question 3
+--select * from customers2 order by first_name asc limit 3
+
+--question 4
+--select last_name from customers2 order by last_name desc
+
+--exercice 1.2
+--question 1
+create table purchases(item_id int 

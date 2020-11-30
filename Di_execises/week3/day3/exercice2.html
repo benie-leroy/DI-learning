@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	    <style>
+	    #container {
+	      width: 400px;
+	      height: 400px;
+	      position: relative;
+	      background: yellow;
+	    }
+	    #animate {
+	      width: 50px;
+	      height: 50px;
+	      position: absolute;
+	      background-color: red;
+	    }
+	    </style>
+	</head>
+	<body>
+<div id="square" style="border: 2px solid blue; width: 50px; height: 50px;" draggable="true" ondragstart="dragStart()">square1</div>
+
+<div id="box" style="border: 2px solid black; width: 100px; height: 200px; background-color: gray;" 
+     ondrop="dragDrop()"
+     ondragover="allowDrop()"
+     ondragenter="allowEnter()"
+     ondragleave="allowLeave()">square3</div>
+
+
+<script type="text/javascript">
+
+	</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>events intro</title>
+</head>
+
+<body>
+
+<form>
+        <input type="button" name="test" value="Click me" onclick="inform()">
+
+    </form>
+
+    <script>
+        function inform(){
+            alert("You clicked me")
+        }
+    </script>
+
+
+    <table id="sampleTable" border="1"> 
+<tr>
+    <td>Row1 cell1</td> 
+    <td>Row1 cell2</td>
+</tr> 
+<tr>
+    <td>Row2 cell1</td> 
+    <td>Row2 cell2</td>
+</tr> 
+</table>
+
+<input type="button" onclick="insert_Row()" value="Insert row"> 
+<button onclick="alert(this.innerHTML)">Click me</button>
+<button id="jsstyle">Style</button>
+<script>
+	let butt = document.getElementById('jsstyle');
+	butt.addEventlistener('click' , ChangeStyle);
+		let butt = document.getElementById('jsstyle');
+	butt.addEventlistener('mouseover' , ChangeBackground);
+	let butt = document.getElementById('jsstyle');
+	butt.addEventlistener('mouseout' , ChangeBorder);
+
+	let table = document.getElementById('sampleTable');
+	let i = 3;
+	function insert_Row(){
+		let tr = document.createElement('tr');
+		let td1 = document.createElement('td');
+		let td2 = document.createElement('td');
+		let x=i++;
+		td1.innerText = `Row${x} cell1`;
+		td2.innerText = `Row${x} cell2`;
+		tr.appendChild(td1);
+		tr.appendChild(td2);
+		table.appendChild(tr);
+	}
+</script>
+
+
+
+</body>
+</html>
